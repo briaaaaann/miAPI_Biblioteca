@@ -71,7 +71,7 @@ async def devolver_libro(id_prestamo: int):
         if libro["id"] == prestamo["id_libro"]:
             libro["estado"] = "Disponible"
             break
-        return {"mensaje": "Libro devuelto"}
+    return {"mensaje": "Libro devuelto"}
     
     #Eliminar registro de prestamo
 @app.delete("/prestamos/{id_prestamo}", tags=['Prestamos'])
