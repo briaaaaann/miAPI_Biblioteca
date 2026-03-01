@@ -80,5 +80,5 @@ async def eliminar_prestamo(id_prestamo:int):
         if prestamo["id_prestamo"] == id_prestamo:
             prestamo_eliminado = prestamos.pop(i)
             return {"mensaje": "Resgistro eliminado", "datos": prestamo_eliminado}
-        raise HTTPException(status_code=404, detail="Registro no econtrado")
+    raise HTTPException(status_code=404, detail="Registro no econtrado")
     
